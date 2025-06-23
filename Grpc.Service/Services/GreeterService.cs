@@ -1,5 +1,5 @@
 using Grpc.Core;
-using Grpc.Service;
+using Grpc.Shared;
 
 namespace Grpc.Service.Services;
 
