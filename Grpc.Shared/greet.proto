@@ -4,18 +4,27 @@ option csharp_namespace = "Grpc.Shared";
 
 package greet;
 
-// The greeting service definition.
 service Greeter {
-  // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply);
 }
 
-// The request message containing the user's name.
 message HelloRequest {
   string name = 1;
 }
 
-// The response message containing the greetings.
 message HelloReply {
   string message = 1;
+}
+
+service Math {
+	rpc GetFibonacci (FromTo) returns (stream NumericResult);
+}
+
+message FromTo {
+	int32 from = 1;
+	int32 to = 2;
+}
+
+message NumericResult {
+	int32 result = 1;
 }
