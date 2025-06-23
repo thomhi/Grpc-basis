@@ -1,0 +1,8 @@
+# .NET Core
+bin/
+obj/
+.nuget/
+packages/
+.vs/
+.vscode-test/
+*.env
