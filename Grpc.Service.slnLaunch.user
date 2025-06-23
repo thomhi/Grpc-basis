@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Start",
+    "Projects": [
+      {
+        "Path": "Grpc.Service\\Grpc.Service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Grpc.Client\\Grpc.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
